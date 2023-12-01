@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main a {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: cursive;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.2s;
+}
+a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(photos/the-town-bg-01.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.top .left-header {
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 40%;
+  align-items: center;
+}
+.top .right-header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 57%;
+  height: 50%;
+  align-items: center;
+}
+.main .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.main .bottom h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.main .bottom p {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.name {
+  color: blue;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992) {
+  .top .right-header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top .right-header {
+    flex-direction: column;
+  }
+  /* --------------------------------------- */
+}
+.main2 {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+.first-section {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.first-section img {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+.second-section {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.second-section h1 {
+  color: blue;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.second-section p {
+  flex-basis: 37%;
+  height: 51%;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #777;
+  font-size: 1.1em;
+}
+.main2 a {
+  font-weight: 700;
+  display: contents;
+}
+.second-section button {
+  border-radius: 12px;
+  color: #fff;
+  background-color: #0d6efd;
+  font-size: 20px;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+.second-section button:hover {
+  background-color: #18478d;
+}
+/* --------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 992) {
+  .main2 {
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+}
+.second-section {
+  padding-bottom: 2em;
+}
+
+@media screen and (max-width: 767px) {
+  .main2 {
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+  .second-section {
+    padding-bottom: 2em;
+    align-items: center;
+  }
+}
+
+.third-section {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(145, 33, 33, 0.9) 9%,
+    rgba(37, 27, 27, 0.2) 120%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+.third-section a {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.third-section h1 {
+  color: #fff;
+  font-size: 2.3em;
+  margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992) {
+  .third-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .third-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*----------------------------------------------------- */
+.fourth-section {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2em;
+  gap: 0.2em;
+}
+.fourth-section h1 {
+  color: #0d6efd;
+  font-size: 2.6em;
+}
+.fourth-section p {
+  color: #777;
+  font-size: 1.3em;
+}
+.five {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.five img {
+  height: 225px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.six {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.six img {
+  flex-basis: 65%;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.five img:hover {
+  transform: scale(1.2);
+}
+.last {
+  width: 100%;
+  background-image: url(photos/the-town-bg-02.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.last h1 {
+  padding: 0.5em;
+  color: #fff;
+}
+.last p {
+  font-size: 1.1em;
+  margin: 1em 3em 1em 2em;
+  color: #fff;
+  font-weight: bold;
+}
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em;
+}
+.last .fin {
+  margin-bottom: 3em;
+}
+.loc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em;
+}
+.in {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.loc input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  margin: 0 20px 0 0;
+  outline: none;
+  padding: 6px 20px;
+  display: flex;
+  flex-basis: 14%;
+  align-items: baseline;
+}
+
+.copy {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.copy span {
+  color: #0d6efd;
+}
+hr {
+  width: 90%;
+  position: relative;
+  overflow: visible;
+  margin-left: 1em;
+}
+
+hr::after {
+  content: " ";
+  position: absolute;
+  width: 20%;
+  background: #fff;
+  height: 0.3em;
+  top: 0px;
+  left: 0px;
+}
